@@ -1,7 +1,7 @@
 import {Component, input, InputSignal, output} from '@angular/core';
 import {ChatResponse} from '../../services/models/chat-response';
 import {ChatService} from '../../services/services/chat.service';
-import {DatePipe} from '@angular/common';
+import {DatePipe, NgOptimizedImage} from '@angular/common';
 import {UserResponse} from '../../services/models/user-response';
 import {UserService} from '../../services/services/user.service';
 import {KeycloakService} from '../../utils/keycloak/keycloak.service';
@@ -10,6 +10,7 @@ import {KeycloakService} from '../../utils/keycloak/keycloak.service';
   selector: 'app-chat-list',
   imports: [
     DatePipe
+
   ],
   templateUrl: './chat-list.component.html',
   styleUrl: './chat-list.component.scss'
